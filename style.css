@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "cascadia_coderegular";
+  src: url("fonts/cascadia-webfont.woff2") format("woff2"),
+    url("fonts/cascadia-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  font-family: "cascadia_coderegular";
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+    font-size: 62.5%;
+  }
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+/* ==== CSS RESET END ==== */
+
+:root {
+  --lavenderHI: rgb(193, 126, 255);
+  --lavender: rgb(139, 91, 184);
+}
+
+.light {
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: -1px;
+  padding: 2.5em;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  border-bottom: 0.2rem solid rgb(75, 48, 100);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.homeLink {
+  color: var(--lavenderHI);
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.others {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.other {
+    display: inherit;
+    align-items: flex-end;
+    font-size: 2rem;
+    color: var(--lavenderHI);
+    font-weight: 800;
+    margin: 0rem 2rem 0rem 3rem;
+}
+
+.theme {
+  margin-left: 2rem;
+  background-color: var(--lavenderHI);
+  padding: 0.1em 1em;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border-radius: 1rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, rgb(22, 2, 41), rgb(54, 6, 99));
+  color: white;
+  height: 90vh;
+}
+
+.title {
+  position: relative;
+  bottom: 6.5rem;
+  font-size: 7rem;
+}
+
+.titleSupp {
+  position: relative;
+  bottom: 6.5rem;
+  font-size: 2.5rem;
+  color: var(--lavenderHI)
+}
+
+.block.one {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(127, 157, 255);
+}
+
+/* ==== FOOTER STYLES: DO NOT TOUCH!! ==== */
+footer {
+  display: flex;
+  background-color: rgb(17, 17, 17);
+  color: var(--lavenderHI);
+  justify-content: center;
+  align-items: center;
+}
+.githubIMG {
+  height: 4rem;
+  width: 4rem;
+  margin: 1rem;
+}
+.closer {
+  font-weight: 800;
+  font-size: 2rem;
+}
